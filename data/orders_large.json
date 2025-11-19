@@ -1,0 +1,3361 @@
+[
+  {
+    "id": "ORD000001",
+    "user_id": "U000982",
+    "order_date": "2025-07-20",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "price": 19.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 1,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 109.98,
+    "tax": 8.8,
+    "shipping": 0.0,
+    "total": 118.78,
+    "shipping_address": {
+      "street": "5115 Cherry St",
+      "city": "Raleigh",
+      "state": "NC",
+      "zip": "27665"
+    }
+  },
+  {
+    "id": "ORD000002",
+    "user_id": "U000639",
+    "order_date": "2025-02-14",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P001",
+        "quantity": 2,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 159.98,
+    "tax": 12.8,
+    "shipping": 0.0,
+    "total": 172.78,
+    "shipping_address": {
+      "street": "1480 Chestnut St",
+      "city": "Tulsa",
+      "state": "OK",
+      "zip": "74143"
+    }
+  },
+  {
+    "id": "ORD000003",
+    "user_id": "U000020",
+    "order_date": "2025-06-19",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 104.97,
+    "tax": 8.4,
+    "shipping": 0.0,
+    "total": 113.37,
+    "shipping_address": {
+      "street": "8464 First St",
+      "city": "Las Vegas",
+      "state": "NV",
+      "zip": "89198"
+    }
+  },
+  {
+    "id": "ORD000004",
+    "user_id": "U000071",
+    "order_date": "2025-01-30",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 249.96,
+    "tax": 20.0,
+    "shipping": 0.0,
+    "total": 269.96,
+    "shipping_address": {
+      "street": "8685 Madison St",
+      "city": "Arlington",
+      "state": "TX",
+      "zip": "76019"
+    },
+    "tracking_number": "TRK550292446",
+    "shipped_date": "2025-02-01"
+  },
+  {
+    "id": "ORD000005",
+    "user_id": "U000324",
+    "order_date": "2025-01-05",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 1,
+        "price": 39.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 229.94,
+    "tax": 18.4,
+    "shipping": 0.0,
+    "total": 248.34,
+    "shipping_address": {
+      "street": "6817 College St",
+      "city": "Charlotte",
+      "state": "NC",
+      "zip": "28281"
+    },
+    "tracking_number": "TRK251564688",
+    "shipped_date": "2025-01-08",
+    "delivered_date": "2025-01-14"
+  },
+  {
+    "id": "ORD000006",
+    "user_id": "U000552",
+    "order_date": "2025-01-27",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 334.96,
+    "tax": 26.8,
+    "shipping": 0.0,
+    "total": 361.76,
+    "shipping_address": {
+      "street": "2308 Valley Dr",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "2195"
+    },
+    "tracking_number": "TRK757172809",
+    "shipped_date": "2025-01-30"
+  },
+  {
+    "id": "ORD000007",
+    "user_id": "U000627",
+    "order_date": "2025-07-15",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 3,
+        "price": 19.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 1,
+        "price": 24.99
+      }
+    ],
+    "subtotal": 119.95,
+    "tax": 9.6,
+    "shipping": 0.0,
+    "total": 129.55,
+    "shipping_address": {
+      "street": "5394 Church St",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97203"
+    },
+    "tracking_number": "TRK820536524",
+    "shipped_date": "2025-07-18",
+    "delivered_date": "2025-07-22"
+  },
+  {
+    "id": "ORD000008",
+    "user_id": "U000680",
+    "order_date": "2025-06-26",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 1,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 89.99,
+    "tax": 7.2,
+    "shipping": 5.99,
+    "total": 103.18,
+    "shipping_address": {
+      "street": "3336 Third St",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30338"
+    }
+  },
+  {
+    "id": "ORD000009",
+    "user_id": "U000173",
+    "order_date": "2024-11-22",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 2,
+        "price": 49.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      }
+    ],
+    "subtotal": 199.94,
+    "tax": 16.0,
+    "shipping": 0.0,
+    "total": 215.94,
+    "shipping_address": {
+      "street": "5619 Market St",
+      "city": "Virginia Beach",
+      "state": "VA",
+      "zip": "23464"
+    }
+  },
+  {
+    "id": "ORD000010",
+    "user_id": "U000334",
+    "order_date": "2024-12-28",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      }
+    ],
+    "subtotal": 94.99,
+    "tax": 7.6,
+    "shipping": 5.99,
+    "total": 108.58,
+    "shipping_address": {
+      "street": "1787 Walnut St",
+      "city": "Minneapolis",
+      "state": "MN",
+      "zip": "55469"
+    }
+  },
+  {
+    "id": "ORD000011",
+    "user_id": "U000534",
+    "order_date": "2025-05-18",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 2,
+        "price": 94.99
+      }
+    ],
+    "subtotal": 189.98,
+    "tax": 15.2,
+    "shipping": 0.0,
+    "total": 205.18,
+    "shipping_address": {
+      "street": "790 First St",
+      "city": "Omaha",
+      "state": "NE",
+      "zip": "68172"
+    }
+  },
+  {
+    "id": "ORD000012",
+    "user_id": "U000683",
+    "order_date": "2025-02-11",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P001",
+        "quantity": 2,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 159.98,
+    "tax": 12.8,
+    "shipping": 0.0,
+    "total": 172.78,
+    "shipping_address": {
+      "street": "4046 Adams St",
+      "city": "Oklahoma City",
+      "state": "OK",
+      "zip": "73168"
+    },
+    "tracking_number": "TRK622280704",
+    "shipped_date": "2025-02-13",
+    "delivered_date": "2025-02-16"
+  },
+  {
+    "id": "ORD000013",
+    "user_id": "U000576",
+    "order_date": "2025-07-09",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 1,
+        "price": 89.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 359.96,
+    "tax": 28.8,
+    "shipping": 0.0,
+    "total": 388.76,
+    "shipping_address": {
+      "street": "660 Park Ave",
+      "city": "Washington",
+      "state": "DC",
+      "zip": "20075"
+    }
+  },
+  {
+    "id": "ORD000014",
+    "user_id": "U000843",
+    "order_date": "2025-07-26",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 679.89,
+    "tax": 54.39,
+    "shipping": 0.0,
+    "total": 734.28,
+    "shipping_address": {
+      "street": "8615 Grant Ave",
+      "city": "New Orleans",
+      "state": "LA",
+      "zip": "70161"
+    },
+    "tracking_number": "TRK745115412",
+    "shipped_date": "2025-07-28"
+  },
+  {
+    "id": "ORD000015",
+    "user_id": "U000178",
+    "order_date": "2025-08-27",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "price": 19.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 3,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 174.94,
+    "tax": 14.0,
+    "shipping": 0.0,
+    "total": 188.94,
+    "shipping_address": {
+      "street": "6193 Dogwood Dr",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip": "32105"
+    },
+    "tracking_number": "TRK492894944",
+    "shipped_date": "2025-08-28"
+  },
+  {
+    "id": "ORD000016",
+    "user_id": "U000653",
+    "order_date": "2025-06-09",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      }
+    ],
+    "subtotal": 49.99,
+    "tax": 4.0,
+    "shipping": 7.99,
+    "total": 61.98,
+    "shipping_address": {
+      "street": "1391 Second Ave",
+      "city": "Las Vegas",
+      "state": "NV",
+      "zip": "89134"
+    },
+    "tracking_number": "TRK317293871",
+    "shipped_date": "2025-06-12",
+    "delivered_date": "2025-06-14"
+  },
+  {
+    "id": "ORD000017",
+    "user_id": "U000059",
+    "order_date": "2025-09-23",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "price": 19.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 1,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 129.96,
+    "tax": 10.4,
+    "shipping": 0.0,
+    "total": 140.36,
+    "shipping_address": {
+      "street": "1137 Water St",
+      "city": "Las Vegas",
+      "state": "NV",
+      "zip": "89172"
+    },
+    "tracking_number": "TRK316538934",
+    "shipped_date": "2025-09-24"
+  },
+  {
+    "id": "ORD000018",
+    "user_id": "U000453",
+    "order_date": "2025-01-21",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "price": 19.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 3,
+        "price": 19.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 579.89,
+    "tax": 46.39,
+    "shipping": 0.0,
+    "total": 626.28,
+    "shipping_address": {
+      "street": "9875 Bridge St",
+      "city": "Omaha",
+      "state": "NE",
+      "zip": "68149"
+    },
+    "tracking_number": "TRK670999499",
+    "shipped_date": "2025-01-24",
+    "delivered_date": "2025-01-26"
+  },
+  {
+    "id": "ORD000019",
+    "user_id": "U000906",
+    "order_date": "2025-10-13",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 3,
+        "price": 19.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      }
+    ],
+    "subtotal": 289.93,
+    "tax": 23.19,
+    "shipping": 0.0,
+    "total": 313.12,
+    "shipping_address": {
+      "street": "4543 Water St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10014"
+    },
+    "tracking_number": "TRK640981933",
+    "shipped_date": "2025-10-15",
+    "delivered_date": "2025-10-17"
+  },
+  {
+    "id": "ORD000020",
+    "user_id": "U000655",
+    "order_date": "2025-07-11",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 2,
+        "price": 49.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      }
+    ],
+    "subtotal": 324.92,
+    "tax": 25.99,
+    "shipping": 0.0,
+    "total": 350.91,
+    "shipping_address": {
+      "street": "6037 Water St",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94164"
+    }
+  },
+  {
+    "id": "ORD000021",
+    "user_id": "U000262",
+    "order_date": "2025-08-12",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "price": 79.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "price": 79.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 3,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 344.93,
+    "tax": 27.59,
+    "shipping": 0.0,
+    "total": 372.52,
+    "shipping_address": {
+      "street": "1355 Adams St",
+      "city": "Tulsa",
+      "state": "OK",
+      "zip": "74135"
+    }
+  },
+  {
+    "id": "ORD000022",
+    "user_id": "U000842",
+    "order_date": "2025-11-17",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 199.95,
+    "tax": 16.0,
+    "shipping": 0.0,
+    "total": 215.95,
+    "shipping_address": {
+      "street": "711 Dogwood Dr",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37233"
+    }
+  },
+  {
+    "id": "ORD000023",
+    "user_id": "U000211",
+    "order_date": "2025-09-26",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 79.98,
+    "tax": 6.4,
+    "shipping": 5.99,
+    "total": 92.37,
+    "shipping_address": {
+      "street": "3911 Water St",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip": "32183"
+    },
+    "tracking_number": "TRK998403244",
+    "shipped_date": "2025-09-28"
+  },
+  {
+    "id": "ORD000024",
+    "user_id": "U000731",
+    "order_date": "2025-10-07",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 2,
+        "price": 49.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      }
+    ],
+    "subtotal": 624.92,
+    "tax": 49.99,
+    "shipping": 0.0,
+    "total": 674.91,
+    "shipping_address": {
+      "street": "4632 Franklin St",
+      "city": "Wichita",
+      "state": "KS",
+      "zip": "67246"
+    }
+  },
+  {
+    "id": "ORD000025",
+    "user_id": "U000440",
+    "order_date": "2025-04-09",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 1,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 794.89,
+    "tax": 63.59,
+    "shipping": 0.0,
+    "total": 858.48,
+    "shipping_address": {
+      "street": "7356 Franklin St",
+      "city": "Raleigh",
+      "state": "NC",
+      "zip": "27683"
+    }
+  },
+  {
+    "id": "ORD000026",
+    "user_id": "U000213",
+    "order_date": "2024-12-21",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 2,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 329.93,
+    "tax": 26.39,
+    "shipping": 0.0,
+    "total": 356.32,
+    "shipping_address": {
+      "street": "6255 Pine Rd",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97211"
+    }
+  },
+  {
+    "id": "ORD000027",
+    "user_id": "U000331",
+    "order_date": "2025-10-18",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 1,
+        "price": 39.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 429.92,
+    "tax": 34.39,
+    "shipping": 0.0,
+    "total": 464.31,
+    "shipping_address": {
+      "street": "7689 Walnut St",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip": "32120"
+    }
+  },
+  {
+    "id": "ORD000028",
+    "user_id": "U000620",
+    "order_date": "2025-09-18",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "price": 19.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 3,
+        "price": 19.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 2,
+        "price": 79.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 3,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 569.88,
+    "tax": 45.59,
+    "shipping": 0.0,
+    "total": 615.47,
+    "shipping_address": {
+      "street": "3098 Spring St",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95106"
+    }
+  },
+  {
+    "id": "ORD000029",
+    "user_id": "U000998",
+    "order_date": "2025-04-08",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 1,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 389.9,
+    "tax": 31.19,
+    "shipping": 0.0,
+    "total": 421.09,
+    "shipping_address": {
+      "street": "4437 Pine Rd",
+      "city": "Seattle",
+      "state": "WA",
+      "zip": "98170"
+    },
+    "tracking_number": "TRK472867457",
+    "shipped_date": "2025-04-09"
+  },
+  {
+    "id": "ORD000030",
+    "user_id": "U000267",
+    "order_date": "2025-07-24",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 2,
+        "price": 49.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 474.91,
+    "tax": 37.99,
+    "shipping": 0.0,
+    "total": 512.9,
+    "shipping_address": {
+      "street": "576 Highland Ave",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10078"
+    },
+    "tracking_number": "TRK896252883",
+    "shipped_date": "2025-07-27",
+    "delivered_date": "2025-08-02"
+  },
+  {
+    "id": "ORD000031",
+    "user_id": "U000239",
+    "order_date": "2025-11-10",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "price": 19.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 2,
+        "price": 49.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 249.92,
+    "tax": 19.99,
+    "shipping": 0.0,
+    "total": 269.91,
+    "shipping_address": {
+      "street": "5564 Elm St",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip": "32143"
+    },
+    "tracking_number": "TRK820259169",
+    "shipped_date": "2025-11-11",
+    "delivered_date": "2025-11-16"
+  },
+  {
+    "id": "ORD000032",
+    "user_id": "U000195",
+    "order_date": "2025-11-19",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 2,
+        "price": 49.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 1,
+        "price": 89.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 2,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 509.9,
+    "tax": 40.79,
+    "shipping": 0.0,
+    "total": 550.69,
+    "shipping_address": {
+      "street": "1454 Hill Rd",
+      "city": "New Orleans",
+      "state": "LA",
+      "zip": "70199"
+    }
+  },
+  {
+    "id": "ORD000033",
+    "user_id": "U000957",
+    "order_date": "2025-07-19",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 69.98,
+    "tax": 5.6,
+    "shipping": 5.99,
+    "total": 81.57,
+    "shipping_address": {
+      "street": "1545 First St",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33172"
+    }
+  },
+  {
+    "id": "ORD000034",
+    "user_id": "U000788",
+    "order_date": "2025-02-23",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      }
+    ],
+    "subtotal": 524.91,
+    "tax": 41.99,
+    "shipping": 0.0,
+    "total": 566.9,
+    "shipping_address": {
+      "street": "9968 Park Ave",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30363"
+    }
+  },
+  {
+    "id": "ORD000035",
+    "user_id": "U000583",
+    "order_date": "2025-07-15",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 69.98,
+    "tax": 5.6,
+    "shipping": 5.99,
+    "total": 81.57,
+    "shipping_address": {
+      "street": "1540 Hill Rd",
+      "city": "Virginia Beach",
+      "state": "VA",
+      "zip": "23480"
+    },
+    "tracking_number": "TRK186378796",
+    "shipped_date": "2025-07-16"
+  },
+  {
+    "id": "ORD000036",
+    "user_id": "U000512",
+    "order_date": "2025-07-04",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      }
+    ],
+    "subtotal": 249.94,
+    "tax": 20.0,
+    "shipping": 0.0,
+    "total": 269.94,
+    "shipping_address": {
+      "street": "4878 Maple St",
+      "city": "Fresno",
+      "state": "CA",
+      "zip": "93700"
+    },
+    "tracking_number": "TRK881096189",
+    "shipped_date": "2025-07-05",
+    "delivered_date": "2025-07-11"
+  },
+  {
+    "id": "ORD000037",
+    "user_id": "U000800",
+    "order_date": "2025-05-01",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 1,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 39.99,
+    "tax": 3.2,
+    "shipping": 7.99,
+    "total": 51.18,
+    "shipping_address": {
+      "street": "6029 First St",
+      "city": "Albuquerque",
+      "state": "NM",
+      "zip": "87195"
+    }
+  },
+  {
+    "id": "ORD000038",
+    "user_id": "U000877",
+    "order_date": "2025-04-04",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 3,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 474.91,
+    "tax": 37.99,
+    "shipping": 0.0,
+    "total": 512.9,
+    "shipping_address": {
+      "street": "8853 Bay St",
+      "city": "Indianapolis",
+      "state": "IN",
+      "zip": "46211"
+    }
+  },
+  {
+    "id": "ORD000039",
+    "user_id": "U000825",
+    "order_date": "2025-09-30",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 2,
+        "price": 94.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 554.94,
+    "tax": 44.4,
+    "shipping": 0.0,
+    "total": 599.34,
+    "shipping_address": {
+      "street": "6667 First St",
+      "city": "Mesa",
+      "state": "AZ",
+      "zip": "85204"
+    },
+    "tracking_number": "TRK181882775",
+    "shipped_date": "2025-10-01"
+  },
+  {
+    "id": "ORD000040",
+    "user_id": "U000474",
+    "order_date": "2025-09-10",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 444.95,
+    "tax": 35.6,
+    "shipping": 0.0,
+    "total": 480.55,
+    "shipping_address": {
+      "street": "541 Lake St",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip": "85090"
+    }
+  },
+  {
+    "id": "ORD000041",
+    "user_id": "U000832",
+    "order_date": "2025-11-15",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 39.98,
+    "tax": 3.2,
+    "shipping": 7.99,
+    "total": 51.17,
+    "shipping_address": {
+      "street": "1934 Mill Rd",
+      "city": "Tampa",
+      "state": "FL",
+      "zip": "33668"
+    },
+    "tracking_number": "TRK410029046",
+    "shipped_date": "2025-11-17",
+    "delivered_date": "2025-11-23"
+  },
+  {
+    "id": "ORD000042",
+    "user_id": "U000092",
+    "order_date": "2025-11-05",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 1,
+        "price": 39.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 79.97,
+    "tax": 6.4,
+    "shipping": 5.99,
+    "total": 92.36,
+    "shipping_address": {
+      "street": "7078 Chestnut St",
+      "city": "Mesa",
+      "state": "AZ",
+      "zip": "85251"
+    }
+  },
+  {
+    "id": "ORD000043",
+    "user_id": "U000116",
+    "order_date": "2025-11-05",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 2,
+        "price": 94.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 699.92,
+    "tax": 55.99,
+    "shipping": 0.0,
+    "total": 755.91,
+    "shipping_address": {
+      "street": "5795 Monroe Dr",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "zip": "80967"
+    }
+  },
+  {
+    "id": "ORD000044",
+    "user_id": "U000920",
+    "order_date": "2025-10-02",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P002",
+        "quantity": 1,
+        "price": 24.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 1,
+        "price": 24.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 519.92,
+    "tax": 41.59,
+    "shipping": 0.0,
+    "total": 561.51,
+    "shipping_address": {
+      "street": "1625 Birch St",
+      "city": "San Jose",
+      "state": "CA",
+      "zip": "95190"
+    }
+  },
+  {
+    "id": "ORD000045",
+    "user_id": "U000739",
+    "order_date": "2025-10-24",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P002",
+        "quantity": 1,
+        "price": 24.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 599.9,
+    "tax": 47.99,
+    "shipping": 0.0,
+    "total": 647.89,
+    "shipping_address": {
+      "street": "4613 Park Ave",
+      "city": "Kansas City",
+      "state": "MO",
+      "zip": "64199"
+    },
+    "tracking_number": "TRK546249912",
+    "shipped_date": "2025-10-26"
+  },
+  {
+    "id": "ORD000046",
+    "user_id": "U000711",
+    "order_date": "2025-07-26",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 2,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 484.92,
+    "tax": 38.79,
+    "shipping": 0.0,
+    "total": 523.71,
+    "shipping_address": {
+      "street": "8163 Adams St",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33103"
+    },
+    "tracking_number": "TRK489526129",
+    "shipped_date": "2025-07-28",
+    "delivered_date": "2025-08-02"
+  },
+  {
+    "id": "ORD000047",
+    "user_id": "U000340",
+    "order_date": "2025-08-08",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 2,
+        "price": 94.99
+      }
+    ],
+    "subtotal": 189.98,
+    "tax": 15.2,
+    "shipping": 0.0,
+    "total": 205.18,
+    "shipping_address": {
+      "street": "2381 Cedar Ln",
+      "city": "Tulsa",
+      "state": "OK",
+      "zip": "74106"
+    }
+  },
+  {
+    "id": "ORD000048",
+    "user_id": "U000768",
+    "order_date": "2025-07-20",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P002",
+        "quantity": 1,
+        "price": 24.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "price": 79.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 3,
+        "price": 34.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      }
+    ],
+    "subtotal": 524.89,
+    "tax": 41.99,
+    "shipping": 0.0,
+    "total": 566.88,
+    "shipping_address": {
+      "street": "8959 College St",
+      "city": "New Orleans",
+      "state": "LA",
+      "zip": "70198"
+    },
+    "tracking_number": "TRK258610071",
+    "shipped_date": "2025-07-22"
+  },
+  {
+    "id": "ORD000049",
+    "user_id": "U000694",
+    "order_date": "2025-07-18",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 2,
+        "price": 94.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 389.93,
+    "tax": 31.19,
+    "shipping": 0.0,
+    "total": 421.12,
+    "shipping_address": {
+      "street": "4945 Spring St",
+      "city": "Fresno",
+      "state": "CA",
+      "zip": "93706"
+    }
+  },
+  {
+    "id": "ORD000050",
+    "user_id": "U000150",
+    "order_date": "2025-09-16",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      }
+    ],
+    "subtotal": 149.97,
+    "tax": 12.0,
+    "shipping": 0.0,
+    "total": 161.97,
+    "shipping_address": {
+      "street": "4111 Adams St",
+      "city": "Detroit",
+      "state": "MI",
+      "zip": "48212"
+    },
+    "tracking_number": "TRK879325091",
+    "shipped_date": "2025-09-18"
+  },
+  {
+    "id": "ORD000051",
+    "user_id": "U000530",
+    "order_date": "2025-06-02",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 1,
+        "price": 24.99
+      }
+    ],
+    "subtotal": 659.89,
+    "tax": 52.79,
+    "shipping": 0.0,
+    "total": 712.68,
+    "shipping_address": {
+      "street": "7057 Chestnut St",
+      "city": "Wichita",
+      "state": "KS",
+      "zip": "67266"
+    },
+    "tracking_number": "TRK607663490",
+    "shipped_date": "2025-06-03",
+    "delivered_date": "2025-06-08"
+  },
+  {
+    "id": "ORD000052",
+    "user_id": "U000565",
+    "order_date": "2025-10-17",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 269.94,
+    "tax": 21.6,
+    "shipping": 0.0,
+    "total": 291.54,
+    "shipping_address": {
+      "street": "3835 Jefferson Ave",
+      "city": "Tulsa",
+      "state": "OK",
+      "zip": "74114"
+    },
+    "tracking_number": "TRK909346500",
+    "shipped_date": "2025-10-18"
+  },
+  {
+    "id": "ORD000053",
+    "user_id": "U000686",
+    "order_date": "2024-12-14",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "price": 19.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      }
+    ],
+    "subtotal": 484.87,
+    "tax": 38.79,
+    "shipping": 0.0,
+    "total": 523.66,
+    "shipping_address": {
+      "street": "4610 Main St",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94141"
+    }
+  },
+  {
+    "id": "ORD000054",
+    "user_id": "U000567",
+    "order_date": "2025-06-09",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 529.9,
+    "tax": 42.39,
+    "shipping": 0.0,
+    "total": 572.29,
+    "shipping_address": {
+      "street": "8606 First St",
+      "city": "Mesa",
+      "state": "AZ",
+      "zip": "85230"
+    }
+  },
+  {
+    "id": "ORD000055",
+    "user_id": "U000074",
+    "order_date": "2025-10-07",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 79.99,
+    "tax": 6.4,
+    "shipping": 5.99,
+    "total": 92.38,
+    "shipping_address": {
+      "street": "5936 Cedar Ln",
+      "city": "Louisville",
+      "state": "KY",
+      "zip": "40282"
+    },
+    "tracking_number": "TRK922718534",
+    "shipped_date": "2025-10-09"
+  },
+  {
+    "id": "ORD000056",
+    "user_id": "U000892",
+    "order_date": "2025-06-08",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 1,
+        "price": 89.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 3,
+        "price": 19.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 1,
+        "price": 39.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      }
+    ],
+    "subtotal": 239.94,
+    "tax": 19.2,
+    "shipping": 0.0,
+    "total": 259.14,
+    "shipping_address": {
+      "street": "4080 Dogwood Dr",
+      "city": "Washington",
+      "state": "DC",
+      "zip": "20049"
+    }
+  },
+  {
+    "id": "ORD000057",
+    "user_id": "U000983",
+    "order_date": "2024-12-05",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 239.97,
+    "tax": 19.2,
+    "shipping": 0.0,
+    "total": 259.17,
+    "shipping_address": {
+      "street": "7490 Meadow Ln",
+      "city": "Detroit",
+      "state": "MI",
+      "zip": "48222"
+    }
+  },
+  {
+    "id": "ORD000058",
+    "user_id": "U000986",
+    "order_date": "2025-09-22",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "price": 79.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 319.96,
+    "tax": 25.6,
+    "shipping": 0.0,
+    "total": 345.56,
+    "shipping_address": {
+      "street": "6341 Third St",
+      "city": "Cleveland",
+      "state": "OH",
+      "zip": "44147"
+    }
+  },
+  {
+    "id": "ORD000059",
+    "user_id": "U000681",
+    "order_date": "2025-09-05",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 1,
+        "price": 89.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 2,
+        "price": 94.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      }
+    ],
+    "subtotal": 514.92,
+    "tax": 41.19,
+    "shipping": 0.0,
+    "total": 556.11,
+    "shipping_address": {
+      "street": "6852 Franklin St",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97246"
+    },
+    "tracking_number": "TRK906498893",
+    "shipped_date": "2025-09-07",
+    "delivered_date": "2025-09-09"
+  },
+  {
+    "id": "ORD000060",
+    "user_id": "U000894",
+    "order_date": "2025-04-29",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "price": 79.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      }
+    ],
+    "subtotal": 344.92,
+    "tax": 27.59,
+    "shipping": 0.0,
+    "total": 372.51,
+    "shipping_address": {
+      "street": "2663 River Rd",
+      "city": "Oakland",
+      "state": "CA",
+      "zip": "94621"
+    }
+  },
+  {
+    "id": "ORD000061",
+    "user_id": "U000303",
+    "order_date": "2025-11-18",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 69.98,
+    "tax": 5.6,
+    "shipping": 5.99,
+    "total": 81.57,
+    "shipping_address": {
+      "street": "5448 Chestnut St",
+      "city": "Phoenix",
+      "state": "AZ",
+      "zip": "85054"
+    },
+    "tracking_number": "TRK277529639",
+    "shipped_date": "2025-11-19",
+    "delivered_date": "2025-11-24"
+  },
+  {
+    "id": "ORD000062",
+    "user_id": "U000179",
+    "order_date": "2024-12-22",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 449.95,
+    "tax": 36.0,
+    "shipping": 0.0,
+    "total": 485.95,
+    "shipping_address": {
+      "street": "9177 Valley Dr",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33158"
+    }
+  },
+  {
+    "id": "ORD000063",
+    "user_id": "U000652",
+    "order_date": "2025-03-18",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 429.93,
+    "tax": 34.39,
+    "shipping": 0.0,
+    "total": 464.32,
+    "shipping_address": {
+      "street": "3000 School St",
+      "city": "Oklahoma City",
+      "state": "OK",
+      "zip": "73187"
+    },
+    "tracking_number": "TRK596543481",
+    "shipped_date": "2025-03-20",
+    "delivered_date": "2025-03-24"
+  },
+  {
+    "id": "ORD000064",
+    "user_id": "U000800",
+    "order_date": "2025-06-08",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 289.95,
+    "tax": 23.2,
+    "shipping": 0.0,
+    "total": 313.15,
+    "shipping_address": {
+      "street": "6029 First St",
+      "city": "Albuquerque",
+      "state": "NM",
+      "zip": "87195"
+    },
+    "tracking_number": "TRK269246290",
+    "shipped_date": "2025-06-10"
+  },
+  {
+    "id": "ORD000065",
+    "user_id": "U000323",
+    "order_date": "2024-11-20",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 3,
+        "price": 34.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 2,
+        "price": 49.99
+      }
+    ],
+    "subtotal": 434.87,
+    "tax": 34.79,
+    "shipping": 0.0,
+    "total": 469.66,
+    "shipping_address": {
+      "street": "3557 Bridge St",
+      "city": "Oklahoma City",
+      "state": "OK",
+      "zip": "73131"
+    }
+  },
+  {
+    "id": "ORD000066",
+    "user_id": "U000738",
+    "order_date": "2025-07-12",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 334.92,
+    "tax": 26.79,
+    "shipping": 0.0,
+    "total": 361.71,
+    "shipping_address": {
+      "street": "3383 Pine Rd",
+      "city": "Albuquerque",
+      "state": "NM",
+      "zip": "87121"
+    },
+    "tracking_number": "TRK353415133",
+    "shipped_date": "2025-07-13"
+  },
+  {
+    "id": "ORD000067",
+    "user_id": "U000830",
+    "order_date": "2025-04-02",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 2,
+        "price": 49.99
+      }
+    ],
+    "subtotal": 99.98,
+    "tax": 8.0,
+    "shipping": 5.99,
+    "total": 113.97,
+    "shipping_address": {
+      "street": "4784 Monroe Dr",
+      "city": "Omaha",
+      "state": "NE",
+      "zip": "68169"
+    },
+    "tracking_number": "TRK863344661",
+    "shipped_date": "2025-04-04",
+    "delivered_date": "2025-04-08"
+  },
+  {
+    "id": "ORD000068",
+    "user_id": "U000515",
+    "order_date": "2025-10-05",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 74.97,
+    "tax": 6.0,
+    "shipping": 5.99,
+    "total": 86.96,
+    "shipping_address": {
+      "street": "9513 Maple St",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30314"
+    }
+  },
+  {
+    "id": "ORD000069",
+    "user_id": "U000297",
+    "order_date": "2025-02-15",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 1,
+        "price": 89.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 169.98,
+    "tax": 13.6,
+    "shipping": 0.0,
+    "total": 183.58,
+    "shipping_address": {
+      "street": "226 Bay St",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37267"
+    },
+    "tracking_number": "TRK453238254",
+    "shipped_date": "2025-02-17"
+  },
+  {
+    "id": "ORD000070",
+    "user_id": "U000676",
+    "order_date": "2025-08-01",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 3,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 574.91,
+    "tax": 45.99,
+    "shipping": 0.0,
+    "total": 620.9,
+    "shipping_address": {
+      "street": "1705 Park Ave",
+      "city": "Cleveland",
+      "state": "OH",
+      "zip": "44108"
+    }
+  },
+  {
+    "id": "ORD000071",
+    "user_id": "U000247",
+    "order_date": "2025-11-02",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P001",
+        "quantity": 2,
+        "price": 79.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "price": 79.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 1,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 334.93,
+    "tax": 26.79,
+    "shipping": 0.0,
+    "total": 361.72,
+    "shipping_address": {
+      "street": "6440 Monroe Dr",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37277"
+    },
+    "tracking_number": "TRK265719876",
+    "shipped_date": "2025-11-03",
+    "delivered_date": "2025-11-09"
+  },
+  {
+    "id": "ORD000072",
+    "user_id": "U000036",
+    "order_date": "2025-09-13",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      }
+    ],
+    "subtotal": 354.95,
+    "tax": 28.4,
+    "shipping": 0.0,
+    "total": 383.35,
+    "shipping_address": {
+      "street": "5544 Market St",
+      "city": "Mesa",
+      "state": "AZ",
+      "zip": "85255"
+    }
+  },
+  {
+    "id": "ORD000073",
+    "user_id": "U000476",
+    "order_date": "2025-07-07",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 314.94,
+    "tax": 25.2,
+    "shipping": 0.0,
+    "total": 340.14,
+    "shipping_address": {
+      "street": "2313 Lake St",
+      "city": "Detroit",
+      "state": "MI",
+      "zip": "48261"
+    },
+    "tracking_number": "TRK336539215",
+    "shipped_date": "2025-07-10",
+    "delivered_date": "2025-07-17"
+  },
+  {
+    "id": "ORD000074",
+    "user_id": "U000349",
+    "order_date": "2025-01-31",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 2,
+        "price": 94.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      }
+    ],
+    "subtotal": 674.91,
+    "tax": 53.99,
+    "shipping": 0.0,
+    "total": 728.9,
+    "shipping_address": {
+      "street": "4988 Elm St",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60663"
+    },
+    "tracking_number": "TRK660872429",
+    "shipped_date": "2025-02-03"
+  },
+  {
+    "id": "ORD000075",
+    "user_id": "U000823",
+    "order_date": "2025-02-26",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 119.97,
+    "tax": 9.6,
+    "shipping": 0.0,
+    "total": 129.57,
+    "shipping_address": {
+      "street": "9722 Highland Ave",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "78753"
+    }
+  },
+  {
+    "id": "ORD000076",
+    "user_id": "U000175",
+    "order_date": "2025-05-28",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      }
+    ],
+    "subtotal": 49.99,
+    "tax": 4.0,
+    "shipping": 7.99,
+    "total": 61.98,
+    "shipping_address": {
+      "street": "566 River Rd",
+      "city": "Sacramento",
+      "state": "CA",
+      "zip": "94286"
+    },
+    "tracking_number": "TRK229406806",
+    "shipped_date": "2025-05-29"
+  },
+  {
+    "id": "ORD000077",
+    "user_id": "U000426",
+    "order_date": "2025-04-21",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 1,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 309.94,
+    "tax": 24.8,
+    "shipping": 0.0,
+    "total": 334.74,
+    "shipping_address": {
+      "street": "6621 Jefferson Ave",
+      "city": "Oklahoma City",
+      "state": "OK",
+      "zip": "73155"
+    }
+  },
+  {
+    "id": "ORD000078",
+    "user_id": "U000968",
+    "order_date": "2025-06-21",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 39.98,
+    "tax": 3.2,
+    "shipping": 7.99,
+    "total": 51.17,
+    "shipping_address": {
+      "street": "112 Lake St",
+      "city": "San Antonio",
+      "state": "TX",
+      "zip": "78259"
+    },
+    "tracking_number": "TRK382069144",
+    "shipped_date": "2025-06-22",
+    "delivered_date": "2025-06-24"
+  },
+  {
+    "id": "ORD000079",
+    "user_id": "U000413",
+    "order_date": "2025-05-20",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      }
+    ],
+    "subtotal": 284.97,
+    "tax": 22.8,
+    "shipping": 0.0,
+    "total": 307.77,
+    "shipping_address": {
+      "street": "4254 Sunset Blvd",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33173"
+    }
+  },
+  {
+    "id": "ORD000080",
+    "user_id": "U000298",
+    "order_date": "2025-09-26",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      }
+    ],
+    "subtotal": 244.93,
+    "tax": 19.59,
+    "shipping": 0.0,
+    "total": 264.52,
+    "shipping_address": {
+      "street": "4312 Jackson St",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33199"
+    }
+  },
+  {
+    "id": "ORD000081",
+    "user_id": "U000638",
+    "order_date": "2025-10-07",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P003",
+        "quantity": 3,
+        "price": 19.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      }
+    ],
+    "subtotal": 379.92,
+    "tax": 30.39,
+    "shipping": 0.0,
+    "total": 410.31,
+    "shipping_address": {
+      "street": "2714 Walnut St",
+      "city": "Fresno",
+      "state": "CA",
+      "zip": "93693"
+    },
+    "tracking_number": "TRK736454446",
+    "shipped_date": "2025-10-08"
+  },
+  {
+    "id": "ORD000082",
+    "user_id": "U000470",
+    "order_date": "2025-09-28",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 119.96,
+    "tax": 9.6,
+    "shipping": 0.0,
+    "total": 129.56,
+    "shipping_address": {
+      "street": "7646 Highland Ave",
+      "city": "Jacksonville",
+      "state": "FL",
+      "zip": "32165"
+    },
+    "tracking_number": "TRK142324085",
+    "shipped_date": "2025-10-01",
+    "delivered_date": "2025-10-08"
+  },
+  {
+    "id": "ORD000083",
+    "user_id": "U000403",
+    "order_date": "2025-04-05",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 1,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 189.96,
+    "tax": 15.2,
+    "shipping": 0.0,
+    "total": 205.16,
+    "shipping_address": {
+      "street": "1992 Jackson St",
+      "city": "Oklahoma City",
+      "state": "OK",
+      "zip": "73128"
+    }
+  },
+  {
+    "id": "ORD000084",
+    "user_id": "U000741",
+    "order_date": "2025-01-23",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 2,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 274.97,
+    "tax": 22.0,
+    "shipping": 0.0,
+    "total": 296.97,
+    "shipping_address": {
+      "street": "684 Oak Ave",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90022"
+    }
+  },
+  {
+    "id": "ORD000085",
+    "user_id": "U000408",
+    "order_date": "2025-10-22",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 3,
+        "price": 34.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 2,
+        "price": 94.99
+      }
+    ],
+    "subtotal": 389.94,
+    "tax": 31.2,
+    "shipping": 0.0,
+    "total": 421.14,
+    "shipping_address": {
+      "street": "5396 Jackson St",
+      "city": "Wichita",
+      "state": "KS",
+      "zip": "67222"
+    }
+  },
+  {
+    "id": "ORD000086",
+    "user_id": "U000486",
+    "order_date": "2025-10-04",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 1,
+        "price": 39.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 3,
+        "price": 49.99
+      }
+    ],
+    "subtotal": 309.93,
+    "tax": 24.79,
+    "shipping": 0.0,
+    "total": 334.72,
+    "shipping_address": {
+      "street": "8597 Maple St",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97277"
+    },
+    "tracking_number": "TRK801585762",
+    "shipped_date": "2025-10-07",
+    "delivered_date": "2025-10-14"
+  },
+  {
+    "id": "ORD000087",
+    "user_id": "U000208",
+    "order_date": "2025-09-18",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 2,
+        "price": 34.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      }
+    ],
+    "subtotal": 354.95,
+    "tax": 28.4,
+    "shipping": 0.0,
+    "total": 383.35,
+    "shipping_address": {
+      "street": "857 First St",
+      "city": "Dallas",
+      "state": "TX",
+      "zip": "75212"
+    },
+    "tracking_number": "TRK768877082",
+    "shipped_date": "2025-09-19",
+    "delivered_date": "2025-09-25"
+  },
+  {
+    "id": "ORD000088",
+    "user_id": "U000751",
+    "order_date": "2025-01-15",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 1,
+        "price": 89.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 3,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 389.93,
+    "tax": 31.19,
+    "shipping": 0.0,
+    "total": 421.12,
+    "shipping_address": {
+      "street": "2769 Sunset Blvd",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60616"
+    }
+  },
+  {
+    "id": "ORD000089",
+    "user_id": "U000230",
+    "order_date": "2025-08-22",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P002",
+        "quantity": 1,
+        "price": 24.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 3,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 369.93,
+    "tax": 29.59,
+    "shipping": 0.0,
+    "total": 399.52,
+    "shipping_address": {
+      "street": "4222 Park Ave",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37284"
+    },
+    "tracking_number": "TRK565400680",
+    "shipped_date": "2025-08-25",
+    "delivered_date": "2025-09-01"
+  },
+  {
+    "id": "ORD000090",
+    "user_id": "U000897",
+    "order_date": "2025-01-27",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P005",
+        "quantity": 3,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 104.97,
+    "tax": 8.4,
+    "shipping": 0.0,
+    "total": 113.37,
+    "shipping_address": {
+      "street": "7105 Jefferson Ave",
+      "city": "Tucson",
+      "state": "AZ",
+      "zip": "85777"
+    }
+  },
+  {
+    "id": "ORD000091",
+    "user_id": "U000553",
+    "order_date": "2025-03-07",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 1064.88,
+    "tax": 85.19,
+    "shipping": 0.0,
+    "total": 1150.07,
+    "shipping_address": {
+      "street": "3320 Lake St",
+      "city": "Albuquerque",
+      "state": "NM",
+      "zip": "87166"
+    }
+  },
+  {
+    "id": "ORD000092",
+    "user_id": "U000159",
+    "order_date": "2025-11-05",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 3,
+        "price": 94.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 564.92,
+    "tax": 45.19,
+    "shipping": 0.0,
+    "total": 610.11,
+    "shipping_address": {
+      "street": "153 Washington Ave",
+      "city": "Kansas City",
+      "state": "MO",
+      "zip": "64184"
+    }
+  },
+  {
+    "id": "ORD000093",
+    "user_id": "U000426",
+    "order_date": "2025-03-10",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      }
+    ],
+    "subtotal": 314.94,
+    "tax": 25.2,
+    "shipping": 0.0,
+    "total": 340.14,
+    "shipping_address": {
+      "street": "6621 Jefferson Ave",
+      "city": "Oklahoma City",
+      "state": "OK",
+      "zip": "73155"
+    }
+  },
+  {
+    "id": "ORD000094",
+    "user_id": "U000206",
+    "order_date": "2025-07-26",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P001",
+        "quantity": 2,
+        "price": 79.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 1,
+        "price": 24.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 1,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 349.93,
+    "tax": 27.99,
+    "shipping": 0.0,
+    "total": 377.92,
+    "shipping_address": {
+      "street": "9219 First St",
+      "city": "Albuquerque",
+      "state": "NM",
+      "zip": "87142"
+    }
+  },
+  {
+    "id": "ORD000095",
+    "user_id": "U000577",
+    "order_date": "2025-08-26",
+    "status": "delivered",
+    "items": [
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 3,
+        "price": 19.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 3,
+        "price": 24.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 1,
+        "price": 49.99
+      }
+    ],
+    "subtotal": 234.92,
+    "tax": 18.79,
+    "shipping": 0.0,
+    "total": 253.71,
+    "shipping_address": {
+      "street": "9431 Bridge St",
+      "city": "Tulsa",
+      "state": "OK",
+      "zip": "74157"
+    },
+    "tracking_number": "TRK444006188",
+    "shipped_date": "2025-08-27",
+    "delivered_date": "2025-08-29"
+  },
+  {
+    "id": "ORD000096",
+    "user_id": "U000381",
+    "order_date": "2024-12-21",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      },
+      {
+        "product_id": "P003",
+        "quantity": 2,
+        "price": 19.99
+      }
+    ],
+    "subtotal": 309.95,
+    "tax": 24.8,
+    "shipping": 0.0,
+    "total": 334.75,
+    "shipping_address": {
+      "street": "5390 Valley Dr",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94196"
+    }
+  },
+  {
+    "id": "ORD000097",
+    "user_id": "U000427",
+    "order_date": "2025-11-10",
+    "status": "shipped",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      },
+      {
+        "product_id": "P004",
+        "quantity": 2,
+        "price": 49.99
+      },
+      {
+        "product_id": "P008",
+        "quantity": 3,
+        "price": 39.99
+      }
+    ],
+    "subtotal": 339.92,
+    "tax": 27.19,
+    "shipping": 0.0,
+    "total": 367.11,
+    "shipping_address": {
+      "street": "4401 Meadow Ln",
+      "city": "Boston",
+      "state": "MA",
+      "zip": "2144"
+    },
+    "tracking_number": "TRK752695399",
+    "shipped_date": "2025-11-12"
+  },
+  {
+    "id": "ORD000098",
+    "user_id": "U000813",
+    "order_date": "2025-08-14",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P008",
+        "quantity": 2,
+        "price": 39.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 2,
+        "price": 79.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 324.93,
+    "tax": 25.99,
+    "shipping": 0.0,
+    "total": 350.92,
+    "shipping_address": {
+      "street": "1694 Dogwood Dr",
+      "city": "Virginia Beach",
+      "state": "VA",
+      "zip": "23537"
+    }
+  },
+  {
+    "id": "ORD000099",
+    "user_id": "U000277",
+    "order_date": "2025-02-26",
+    "status": "pending",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      },
+      {
+        "product_id": "P002",
+        "quantity": 2,
+        "price": 24.99
+      },
+      {
+        "product_id": "P005",
+        "quantity": 1,
+        "price": 34.99
+      }
+    ],
+    "subtotal": 179.96,
+    "tax": 14.4,
+    "shipping": 0.0,
+    "total": 194.36,
+    "shipping_address": {
+      "street": "6177 School St",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "78741"
+    }
+  },
+  {
+    "id": "ORD000100",
+    "user_id": "U000325",
+    "order_date": "2025-11-04",
+    "status": "processing",
+    "items": [
+      {
+        "product_id": "P007",
+        "quantity": 2,
+        "price": 94.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      },
+      {
+        "product_id": "P001",
+        "quantity": 3,
+        "price": 79.99
+      },
+      {
+        "product_id": "P007",
+        "quantity": 1,
+        "price": 94.99
+      },
+      {
+        "product_id": "P006",
+        "quantity": 3,
+        "price": 89.99
+      }
+    ],
+    "subtotal": 1034.88,
+    "tax": 82.79,
+    "shipping": 0.0,
+    "total": 1117.67,
+    "shipping_address": {
+      "street": "7719 Valley Dr",
+      "city": "Oakland",
+      "state": "CA",
+      "zip": "94621"
+    }
+  }
+]
