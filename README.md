@@ -24,7 +24,7 @@ This creates `shopping_cart.db` with:
 - 1,000 users with realistic data
 - 100,000 orders
 - 300k+ order items
-- 8 products
+- 278+ products across 8 categories
 
 ### 2. Run the Interactive Agent
 
@@ -49,14 +49,12 @@ You: How much have I spent?
 
 ```
 .
-├── data/
-│   └── products.json           # Product catalog (used by init)
 ├── shopping_cart_agent_db.py   # Main database-powered agent
 ├── init_database.py            # Database initialization script
 ├── test_agent_db.py            # Comprehensive test suite
 ├── generate_database_dump.py   # Generate MySQL dump file
-├── shopping_cart.db            # SQLite database (38MB)
-├── database_dump.sql           # MySQL-compatible dump (25MB)
+├── shopping_cart.db            # SQLite database (40MB)
+├── database_dump.sql           # MySQL-compatible dump (varies)
 ├── README.md                   # This file
 └── README_DATABASE.md          # Detailed documentation
 ```
@@ -68,11 +66,15 @@ You: How much have I spent?
 - Fields: id, name, email, phone, address, member_since
 
 ### products
-- 8 products across 4 categories:
-  - Electronics (Headphones, LED Lamp, Laptop Stand)
-  - Clothing (T-Shirts)
-  - Home & Kitchen (Water Bottle, Coffee Maker)
-  - Sports & Fitness (Yoga Mat, Running Shoes)
+- 278+ products across 8 categories:
+  - Electronics (40 products: Headphones, Speakers, Chargers, Accessories, etc.)
+  - Clothing (34 products: Shirts, Pants, Accessories, etc.)
+  - Home & Kitchen (39 products: Appliances, Cookware, Linens, etc.)
+  - Sports & Fitness (40 products: Exercise Equipment, Athletic Shoes, Gear, etc.)
+  - Beauty & Personal Care (35 products: Skincare, Haircare, Hygiene, etc.)
+  - Books & Media (30 products: Books, Audiobooks, Media, etc.)
+  - Toys & Games (30 products: Board Games, Toys, Gaming, etc.)
+  - Office Supplies (30 products: Stationery, Organizers, Tools, etc.)
 
 ### orders
 - 100,000 orders with various statuses (pending, processing, shipped, delivered)
@@ -236,19 +238,20 @@ Tests include:
 ## Files
 
 - **shopping_cart_agent_db.py** - Main agent with database support
-- **init_database.py** - Initialize SQLite database with sample data
+- **init_database.py** - Initialize SQLite database with generated data (no JSON dependencies)
 - **test_agent_db.py** - Comprehensive test suite
-- **generate_database_dump.py** - Generate MySQL-compatible SQL dump
+- **generate_database_dump.py** - Generate MySQL-compatible SQL dump with 300+ products
 - **shopping_cart.db** - SQLite database (created by init_database.py)
-- **database_dump.sql** - MySQL-compatible SQL dump
+- **database_dump.sql** - MySQL-compatible SQL dump (created by generate_database_dump.py)
 - **README_DATABASE.md** - Detailed technical documentation
 
 ## Performance
 
-- Database Size: 38MB SQLite file
+- Database Size: ~40MB SQLite file
+- Products: 278 across 8 categories
 - Query Response: < 100ms for most queries
 - Indexed fields: user_id, order_date, status, email
-- Supports 100k+ orders without performance degradation
+- Supports 100k+ orders and 300+ products without performance degradation
 
 ## Documentation
 

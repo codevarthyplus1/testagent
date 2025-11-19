@@ -7,7 +7,6 @@ SQLite syntax is slightly different from MySQL, so we'll regenerate the data dir
 """
 
 import sqlite3
-import json
 import random
 from datetime import datetime, timedelta
 
@@ -99,19 +98,182 @@ def create_indexes(conn):
     print("Indexes created successfully")
 
 
-def load_products(conn):
-    """Load products from JSON file."""
-    print("Loading products...")
+def generate_products(count=300):
+    """Generate a diverse list of products."""
 
-    with open('data/products.json', 'r') as f:
-        products = json.load(f)
+    # Product categories with items
+    product_data = {
+        "Electronics": {
+            "items": [
+                "Wireless Headphones", "Bluetooth Earbuds", "Noise Cancelling Headphones",
+                "LED Desk Lamp", "Smart Bulb", "Ring Light", "Table Lamp",
+                "Laptop Stand", "Monitor Stand", "Phone Stand", "Tablet Stand",
+                "USB Hub", "Card Reader", "External SSD", "USB Flash Drive",
+                "Wireless Mouse", "Mechanical Keyboard", "Gaming Mouse", "Ergonomic Keyboard",
+                "Webcam", "Microphone", "USB Cable", "HDMI Cable", "Power Bank",
+                "Wireless Charger", "Fast Charger", "Charging Cable", "Wall Adapter",
+                "Smart Watch", "Fitness Tracker", "Phone Case", "Screen Protector",
+                "Bluetooth Speaker", "Portable Speaker", "Soundbar", "Smart Display",
+                "Security Camera", "Doorbell Camera", "Smart Plug", "Smart Thermostat"
+            ],
+            "brands": ["TechPro", "AudioTech", "BrightSpace", "DeskPro", "SmartHome", "GadgetHub"]
+        },
+        "Clothing": {
+            "items": [
+                "Cotton T-Shirt", "V-Neck Shirt", "Polo Shirt", "Long Sleeve Shirt",
+                "Hoodie", "Sweatshirt", "Jacket", "Winter Coat", "Rain Jacket",
+                "Jeans", "Chinos", "Cargo Pants", "Joggers", "Shorts",
+                "Dress", "Skirt", "Blouse", "Tank Top", "Cardigan",
+                "Socks", "Underwear", "Bra", "Sports Bra", "Leggings",
+                "Hat", "Beanie", "Cap", "Scarf", "Gloves",
+                "Belt", "Tie", "Bow Tie", "Suspenders", "Wallet"
+            ],
+            "brands": ["EcoWear", "FashionHub", "StyleCo", "TrendyThreads", "UrbanStyle", "ClassicFit"]
+        },
+        "Home & Kitchen": {
+            "items": [
+                "Coffee Maker", "French Press", "Pour Over", "Espresso Machine",
+                "Blender", "Food Processor", "Juicer", "Hand Mixer", "Stand Mixer",
+                "Toaster", "Air Fryer", "Microwave", "Rice Cooker", "Slow Cooker",
+                "Water Bottle", "Travel Mug", "Tea Infuser", "Wine Glasses", "Coffee Mugs",
+                "Knife Set", "Cutting Board", "Mixing Bowls", "Measuring Cups", "Spatula Set",
+                "Cookware Set", "Frying Pan", "Sauce Pan", "Dutch Oven", "Baking Sheet",
+                "Bed Sheets", "Pillows", "Comforter", "Blanket", "Mattress Pad",
+                "Towel Set", "Bath Mat", "Shower Curtain", "Storage Bins", "Hangers"
+            ],
+            "brands": ["BrewMaster", "HydroLife", "ChefPro", "HomeEssentials", "KitchenAid", "ComfortHome"]
+        },
+        "Sports & Fitness": {
+            "items": [
+                "Yoga Mat", "Exercise Mat", "Foam Roller", "Resistance Bands", "Dumbbells",
+                "Running Shoes", "Training Shoes", "Basketball Shoes", "Soccer Cleats", "Hiking Boots",
+                "Gym Bag", "Water Bottle", "Shaker Bottle", "Gym Towel", "Jump Rope",
+                "Yoga Blocks", "Yoga Strap", "Balance Ball", "Kettlebell", "Medicine Ball",
+                "Bike Helmet", "Cycling Gloves", "Sports Watch", "Heart Rate Monitor", "Pedometer",
+                "Tennis Racket", "Badminton Set", "Basketball", "Soccer Ball", "Volleyball",
+                "Swim Goggles", "Swim Cap", "Snorkel Set", "Camping Tent", "Sleeping Bag",
+                "Backpack", "Hiking Poles", "Compression Shorts", "Sports Bra", "Athletic Socks"
+            ],
+            "brands": ["ZenFit", "SpeedRunner", "ActiveGear", "FitPro", "AthleteZone", "SportElite"]
+        },
+        "Beauty & Personal Care": {
+            "items": [
+                "Face Moisturizer", "Face Wash", "Toner", "Serum", "Eye Cream",
+                "Sunscreen", "Body Lotion", "Hand Cream", "Lip Balm", "Face Mask",
+                "Shampoo", "Conditioner", "Hair Mask", "Hair Oil", "Styling Gel",
+                "Toothbrush", "Toothpaste", "Mouthwash", "Dental Floss", "Electric Toothbrush",
+                "Makeup Remover", "Cleanser", "Exfoliator", "Night Cream", "BB Cream",
+                "Perfume", "Cologne", "Deodorant", "Body Spray", "Body Wash",
+                "Razor", "Shaving Cream", "Aftershave", "Nail Clipper", "Tweezers"
+            ],
+            "brands": ["BeautyNature", "GlowSkin", "PureEssence", "FreshCare", "LuxeBeauty", "NaturalGlow"]
+        },
+        "Books & Media": {
+            "items": [
+                "Fiction Novel", "Mystery Novel", "Romance Novel", "Sci-Fi Novel", "Fantasy Novel",
+                "Biography", "Self-Help Book", "Cookbook", "Travel Guide", "History Book",
+                "Children's Book", "Comic Book", "Graphic Novel", "Poetry Book", "Art Book",
+                "Educational DVD", "Movie Collection", "Music Album", "Audiobook", "E-Reader",
+                "Notebook", "Journal", "Planner", "Sketchbook", "Coloring Book",
+                "Bookmark", "Book Light", "Reading Glasses", "Book Stand", "Bookends"
+            ],
+            "brands": ["ReadMore", "ClassicReads", "ModernMedia", "BookHub", "StoryWorld", "PageTurner"]
+        },
+        "Toys & Games": {
+            "items": [
+                "Board Game", "Card Game", "Puzzle", "Building Blocks", "Action Figures",
+                "Doll", "Plush Toy", "Remote Control Car", "Drone", "Robot Toy",
+                "Art Set", "Craft Kit", "Science Kit", "Magic Set", "Musical Instrument",
+                "Basketball Hoop", "Soccer Goal", "Frisbee", "Kite", "Bubble Machine",
+                "Educational Toy", "Baby Rattle", "Stacking Toys", "Shape Sorter", "Play Kitchen",
+                "Video Game", "Gaming Console", "Controller", "Gaming Headset", "Game Card"
+            ],
+            "brands": ["PlayFun", "ToyWorld", "GameMaster", "KidJoy", "FunTime", "CreativePlay"]
+        },
+        "Office Supplies": {
+            "items": [
+                "Notebook", "Sticky Notes", "Index Cards", "Legal Pad", "Graph Paper",
+                "Pen Set", "Pencil Set", "Markers", "Highlighters", "Crayons",
+                "Stapler", "Paper Clips", "Binder Clips", "Rubber Bands", "Push Pins",
+                "Tape Dispenser", "Scissors", "Paper Cutter", "Hole Punch", "Calculator",
+                "File Folders", "Binders", "Sheet Protectors", "Dividers", "Labels",
+                "Desk Organizer", "Drawer Organizer", "Pen Holder", "Paper Tray", "Calendar"
+            ],
+            "brands": ["OfficePro", "WorkSpace", "DeskMate", "Stationery+", "OfficeHub", "PaperWorks"]
+        }
+    }
+
+    products = []
+    product_id = 1
+
+    for category, data in product_data.items():
+        items = data["items"]
+        brands = data["brands"]
+
+        for item in items:
+            if product_id > count:
+                break
+
+            # Generate realistic price based on category
+            if category == "Electronics":
+                base_price = random.uniform(19.99, 299.99)
+            elif category == "Clothing":
+                base_price = random.uniform(9.99, 89.99)
+            elif category == "Home & Kitchen":
+                base_price = random.uniform(14.99, 199.99)
+            elif category == "Sports & Fitness":
+                base_price = random.uniform(12.99, 149.99)
+            elif category == "Beauty & Personal Care":
+                base_price = random.uniform(7.99, 79.99)
+            elif category == "Books & Media":
+                base_price = random.uniform(9.99, 49.99)
+            elif category == "Toys & Games":
+                base_price = random.uniform(14.99, 99.99)
+            else:  # Office Supplies
+                base_price = random.uniform(4.99, 59.99)
+
+            price = round(base_price, 2)
+            stock = random.randint(0, 200)
+            rating = round(random.uniform(3.5, 5.0), 1)
+            brand = random.choice(brands)
+
+            # Generate description
+            quality_words = ["Premium", "High-quality", "Professional", "Deluxe", "Essential"]
+            feature_words = ["durable", "comfortable", "efficient", "reliable", "versatile"]
+
+            description = f"{random.choice(quality_words)} {item.lower()} - {random.choice(feature_words)} and perfect for daily use"
+
+            product = {
+                "id": f"P{product_id:06d}",
+                "name": item,
+                "category": category,
+                "price": price,
+                "stock": stock,
+                "description": description,
+                "brand": brand,
+                "rating": rating
+            }
+
+            products.append(product)
+            product_id += 1
+
+        if product_id > count:
+            break
+
+    return products
+
+
+def load_products(conn, count=300):
+    """Generate and load products into database."""
+    print(f"Generating and loading {count} products...")
+
+    products = generate_products(count)
 
     cursor = conn.cursor()
+    batch = []
+
     for product in products:
-        cursor.execute("""
-            INSERT OR REPLACE INTO products (id, name, category, price, stock, description, brand, rating)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-        """, (
+        batch.append((
             product['id'],
             product['name'],
             product['category'],
@@ -121,6 +283,11 @@ def load_products(conn):
             product['brand'],
             product['rating']
         ))
+
+    cursor.executemany("""
+        INSERT OR REPLACE INTO products (id, name, category, price, stock, description, brand, rating)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    """, batch)
 
     conn.commit()
     print(f"Loaded {len(products)} products")
@@ -192,7 +359,7 @@ def generate_and_load_orders(conn, count=100000):
     """Generate and load orders into database."""
     print(f"Generating and loading {count} orders...")
 
-    from generate_database_dump import PRODUCTS, ORDER_STATUSES
+    ORDER_STATUSES = ["pending", "processing", "shipped", "delivered"]
 
     # Get all users
     cursor = conn.cursor()
@@ -201,6 +368,14 @@ def generate_and_load_orders(conn, count=100000):
 
     if not users:
         print("Error: No users found in database")
+        return
+
+    # Get all products from database
+    cursor.execute("SELECT id, price FROM products")
+    products = [{"id": row[0], "price": row[1]} for row in cursor.fetchall()]
+
+    if not products:
+        print("Error: No products found in database")
         return
 
     order_batch = []
@@ -217,7 +392,7 @@ def generate_and_load_orders(conn, count=100000):
         subtotal = 0
 
         for _ in range(num_items):
-            product = random.choice(PRODUCTS)
+            product = random.choice(products)
             quantity = random.randint(1, 3)
             price = product["price"]
             subtotal += quantity * price
@@ -385,7 +560,7 @@ def main():
         create_tables(conn)
 
         # Load data
-        load_products(conn)
+        load_products(conn, count=300)
         generate_and_load_users(conn, count=1000)
         generate_and_load_orders(conn, count=100000)
 

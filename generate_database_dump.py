@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
 Generate a database dump with 1000+ users and 100k+ orders
-Creates both JSON files and SQL dump file
+Creates SQL dump file with 300+ products
 """
 
-import json
 import random
 from datetime import datetime, timedelta
 
@@ -98,16 +97,30 @@ STREET_NAMES = [
 
 ORDER_STATUSES = ["pending", "processing", "shipped", "delivered"]
 
-PRODUCTS = [
-    {"id": "P001", "price": 79.99},
-    {"id": "P002", "price": 24.99},
-    {"id": "P003", "price": 19.99},
-    {"id": "P004", "price": 49.99},
-    {"id": "P005", "price": 34.99},
-    {"id": "P006", "price": 89.99},
-    {"id": "P007", "price": 94.99},
-    {"id": "P008", "price": 39.99}
-]
+
+def generate_products(count=300):
+    """Generate a diverse list of products - simplified version for SQL dump."""
+    # Import the full product generator from init_database
+    try:
+        from init_database import generate_products as gen_products
+        return gen_products(count)
+    except ImportError:
+        # Fallback to basic generation
+        products = []
+        categories = ["Electronics", "Clothing", "Home & Kitchen", "Sports & Fitness",
+                     "Beauty & Personal Care", "Books & Media", "Toys & Games", "Office Supplies"]
+
+        for i in range(1, count + 1):
+            category = categories[(i - 1) % len(categories)]
+            products.append({
+                "id": f"P{i:06d}",
+                "price": round(random.uniform(9.99, 199.99), 2)
+            })
+        return products
+
+
+# Generate products list for backwards compatibility
+PRODUCTS = generate_products(300)
 
 
 def generate_email(first_name, last_name, user_id):
@@ -439,11 +452,11 @@ def main():
     # Configuration
     NUM_USERS = 1000
     NUM_ORDERS = 100000
+    NUM_PRODUCTS = 300
 
-    # Load existing products
-    print("Loading existing products...")
-    with open('data/products.json', 'r') as f:
-        products = json.load(f)
+    # Generate products
+    print(f"Generating {NUM_PRODUCTS} products...")
+    products = generate_products(NUM_PRODUCTS)
 
     # Generate data
     users = generate_users(NUM_USERS)
@@ -455,26 +468,17 @@ def main():
     # Create SQL dump
     create_sql_dump(users, orders, products, 'database_dump.sql')
 
-    # Also save as JSON for reference
-    print("Saving JSON files for reference...")
-    with open('data/users_large.json', 'w') as f:
-        json.dump(users[:100], f, indent=2)  # Save first 100 for reference
-
-    with open('data/orders_large.json', 'w') as f:
-        json.dump(orders[:100], f, indent=2)  # Save first 100 for reference
-
     print()
     print("=" * 70)
     print("Generation Complete!")
     print("=" * 70)
+    print(f"Products generated: {len(products)}")
     print(f"Users generated: {len(users)}")
     print(f"Orders generated: {len(orders)}")
     print(f"Total order items: {sum(len(order['items']) for order in orders)}")
     print()
     print("Output files:")
     print("  - database_dump.sql (Full SQL database dump)")
-    print("  - data/users_large.json (First 100 users for reference)")
-    print("  - data/orders_large.json (First 100 orders for reference)")
     print()
 
 

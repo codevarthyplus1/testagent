@@ -19,8 +19,9 @@ The system uses a SQLite database with the following tables:
 - Fields: id, name, email, phone, address, member_since
 
 ### products
-- Product catalog (8 products)
+- Product catalog (278 products across 8 categories)
 - Fields: id, name, category, price, stock, description, brand, rating
+- Categories: Electronics, Clothing, Home & Kitchen, Sports & Fitness, Beauty & Personal Care, Books & Media, Toys & Games, Office Supplies
 
 ### orders
 - Order records (100,000 records)
@@ -42,7 +43,7 @@ This creates `shopping_cart.db` with:
 - 1,000 users
 - 100,000 orders
 - 300k+ order items
-- 8 products
+- 278 products across 8 categories
 
 ### 2. Run the Interactive Agent
 
