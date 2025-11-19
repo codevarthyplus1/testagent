@@ -1,0 +1,67 @@
+[
+  {
+    "id": "U001",
+    "name": "Sarah Johnson",
+    "email": "sarah.j@email.com",
+    "phone": "555-0101",
+    "address": {
+      "street": "123 Maple Street",
+      "city": "Springfield",
+      "state": "IL",
+      "zip": "62701"
+    },
+    "member_since": "2023-01-15"
+  },
+  {
+    "id": "U002",
+    "name": "Michael Chen",
+    "email": "m.chen@email.com",
+    "phone": "555-0102",
+    "address": {
+      "street": "456 Oak Avenue",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97201"
+    },
+    "member_since": "2023-03-22"
+  },
+  {
+    "id": "U003",
+    "name": "Emily Rodriguez",
+    "email": "emily.r@email.com",
+    "phone": "555-0103",
+    "address": {
+      "street": "789 Pine Road",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "78701"
+    },
+    "member_since": "2022-11-08"
+  },
+  {
+    "id": "U004",
+    "name": "David Kim",
+    "email": "david.kim@email.com",
+    "phone": "555-0104",
+    "address": {
+      "street": "321 Elm Street",
+      "city": "Seattle",
+      "state": "WA",
+      "zip": "98101"
+    },
+    "member_since": "2023-05-10"
+  },
+  {
+    "id": "U005",
+    "name": "Jessica Martinez",
+    "email": "jess.martinez@email.com",
+    "phone": "555-0105",
+    "address": {
+      "street": "654 Birch Lane",
+      "city": "Denver",
+      "state": "CO",
+      "zip": "80201"
+    },
+    "member_since": "2023-02-28"
+  }
+]

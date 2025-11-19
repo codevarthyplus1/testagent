@@ -1,0 +1,82 @@
+[
+  {
+    "id": "P001",
+    "name": "Wireless Bluetooth Headphones",
+    "category": "Electronics",
+    "price": 79.99,
+    "stock": 45,
+    "description": "High-quality wireless headphones with noise cancellation and 30-hour battery life",
+    "brand": "AudioTech",
+    "rating": 4.5
+  },
+  {
+    "id": "P002",
+    "name": "Organic Cotton T-Shirt",
+    "category": "Clothing",
+    "price": 24.99,
+    "stock": 120,
+    "description": "Comfortable organic cotton t-shirt available in multiple colors",
+    "brand": "EcoWear",
+    "rating": 4.3
+  },
+  {
+    "id": "P003",
+    "name": "Stainless Steel Water Bottle",
+    "category": "Home & Kitchen",
+    "price": 19.99,
+    "stock": 85,
+    "description": "Insulated water bottle keeps drinks cold for 24 hours, hot for 12 hours",
+    "brand": "HydroLife",
+    "rating": 4.7
+  },
+  {
+    "id": "P004",
+    "name": "Yoga Mat Premium",
+    "category": "Sports & Fitness",
+    "price": 49.99,
+    "stock": 60,
+    "description": "Extra thick yoga mat with non-slip surface and carrying strap",
+    "brand": "ZenFit",
+    "rating": 4.6
+  },
+  {
+    "id": "P005",
+    "name": "LED Desk Lamp",
+    "category": "Electronics",
+    "price": 34.99,
+    "stock": 35,
+    "description": "Adjustable LED desk lamp with touch controls and USB charging port",
+    "brand": "BrightSpace",
+    "rating": 4.4
+  },
+  {
+    "id": "P006",
+    "name": "Coffee Maker Pro",
+    "category": "Home & Kitchen",
+    "price": 89.99,
+    "stock": 25,
+    "description": "Programmable coffee maker with thermal carafe and brew strength control",
+    "brand": "BrewMaster",
+    "rating": 4.8
+  },
+  {
+    "id": "P007",
+    "name": "Running Shoes",
+    "category": "Sports & Fitness",
+    "price": 94.99,
+    "stock": 50,
+    "description": "Lightweight running shoes with cushioned sole and breathable mesh",
+    "brand": "SpeedRunner",
+    "rating": 4.5
+  },
+  {
+    "id": "P008",
+    "name": "Laptop Stand Aluminum",
+    "category": "Electronics",
+    "price": 39.99,
+    "stock": 75,
+    "description": "Ergonomic aluminum laptop stand with adjustable height and angle",
+    "brand": "DeskPro",
+    "rating": 4.6
+  }
+]
