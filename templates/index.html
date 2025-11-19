@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Customer Service</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🛒 Shopping Cart Customer Service</h1>
+            <div id="user-info" class="user-info hidden">
+                <span id="user-name"></span>
+                <button id="logout-btn" class="btn btn-secondary">Logout</button>
+            </div>
+            <div id="login-section" class="login-section">
+                <input type="text" id="customer-id-input" placeholder="Enter Customer ID (e.g., U000001)" />
+                <button id="login-btn" class="btn btn-primary">Login</button>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav-tabs">
+            <button class="tab-btn active" data-tab="chat">💬 Chat</button>
+            <button class="tab-btn" data-tab="products">🛍️ Products</button>
+            <button class="tab-btn" data-tab="orders">📦 My Orders</button>
+            <button class="tab-btn" data-tab="account">👤 Account</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Chat Tab -->
+            <div id="chat-tab" class="tab-content active">
+                <div class="chat-container">
+                    <div id="chat-messages" class="chat-messages">
+                        <div class="message assistant">
+                            <div class="message-content">
+                                <p><strong>Welcome to Shopping Cart Customer Service!</strong></p>
+                                <p>I can help you with:</p>
+                                <ul>
+                                    <li>Product information and catalog browsing</li>
+                                    <li>Order tracking and status updates</li>
+                                    <li>Account information (requires login)</li>
+                                    <li>Purchase history and spending (requires login)</li>
+                                </ul>
+                                <p>Try asking: "What products are available?" or "What electronics do you have?"</p>
+                                <p>For personal queries, please login with your Customer ID.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input-container">
+                        <input type="text" id="question-input" placeholder="Ask a question..." />
+                        <button id="send-btn" class="btn btn-primary">Send</button>
+                    </div>
+                    <div class="quick-questions">
+                        <p><strong>Quick Questions:</strong></p>
+                        <button class="quick-btn">What products are available?</button>
+                        <button class="quick-btn">Show me electronics</button>
+                        <button class="quick-btn">What's my order summary?</button>
+                        <button class="quick-btn">Show my pending orders</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Tab -->
+            <div id="products-tab" class="tab-content">
+                <div class="products-header">
+                    <h2>Product Catalog</h2>
+                    <div class="products-filters">
+                        <select id="category-filter" class="filter-select">
+                            <option value="">All Categories</option>
+                        </select>
+                        <input type="text" id="product-search" placeholder="Search products..." />
+                        <button id="search-btn" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+                <div id="products-grid" class="products-grid">
+                    <p class="loading">Loading products...</p>
+                </div>
+            </div>
+
+            <!-- Orders Tab -->
+            <div id="orders-tab" class="tab-content">
+                <div class="orders-header">
+                    <h2>My Orders</h2>
+                    <div class="orders-filters">
+                        <button class="filter-btn active" data-status="">All</button>
+                        <button class="filter-btn" data-status="pending">Pending</button>
+                        <button class="filter-btn" data-status="processing">Processing</button>
+                        <button class="filter-btn" data-status="shipped">Shipped</button>
+                        <button class="filter-btn" data-status="delivered">Delivered</button>
+                    </div>
+                </div>
+                <div id="order-summary" class="order-summary"></div>
+                <div id="orders-list" class="orders-list">
+                    <p class="info-message">Please login to view your orders.</p>
+                </div>
+            </div>
+
+            <!-- Account Tab -->
+            <div id="account-tab" class="tab-content">
+                <div class="account-container">
+                    <h2>Account Information</h2>
+                    <div id="account-info">
+                        <p class="info-message">Please login to view your account information.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Shopping Cart Customer Service Agent - Database Version</p>
+            <p>278 products across 8 categories | 1,000 customers | 100,000+ orders</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

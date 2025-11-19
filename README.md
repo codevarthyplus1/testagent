@@ -1,62 +1,83 @@
 # Shopping Cart Customer Service Agent
 
-An intelligent customer service agent for a shopping cart system using SQL database. The agent provides customer-specific responses based on customer ID authentication.
+An intelligent customer service agent for a shopping cart system using SQL database. Available as both a **command-line interface** and a **web application** with customer ID authentication.
 
 ## Features
 
+- **Web Interface**: Modern, responsive web UI with chat, product browsing, and order management
 - **Customer Authentication**: Login with customer ID to access personalized information
 - **Order Management**: View orders, track shipments, check order history by status
 - **Account Information**: View profile, order summary, and spending history
-- **Product Catalog**: Browse products without authentication required
+- **Product Catalog**: Browse 278+ products across 8 categories
 - **Access Control**: Customers can only access their own orders and information
 - **Natural Language Processing**: Ask questions in plain English
 - **Large Dataset**: 1,000 users with 100,000+ orders for realistic testing
 
 ## Quick Start
 
-### 1. Initialize the Database
+### Option 1: Web Application (Recommended)
 
+1. **Install Dependencies:**
+```bash
+pip3 install -r requirements.txt
+```
+
+2. **Start the Web Server:**
+```bash
+python3 web_app.py
+# Or use the startup script:
+chmod +x start_web_app.sh
+./start_web_app.sh
+```
+
+3. **Open in Browser:**
+Navigate to `http://localhost:5000`
+
+4. **Login:**
+Use any customer ID from `U000001` to `U001000` (e.g., `U000001`)
+
+### Option 2: Command Line Interface
+
+1. **Initialize Database:**
 ```bash
 python3 init_database.py
 ```
 
-This creates `shopping_cart.db` with:
-- 1,000 users with realistic data
-- 100,000 orders
-- 300k+ order items
-- 278+ products across 8 categories
-
-### 2. Run the Interactive Agent
-
+2. **Run the CLI Agent:**
 ```bash
 python3 shopping_cart_agent_db.py
 ```
 
-### 3. Login and Ask Questions
-
+3. **Login and Query:**
 ```
 You: login U000001
 Agent: Welcome back, Ralph Roberts!
 
 You: Show my account information
 You: What's my order summary?
-You: Show my pending orders
-You: Track order ORD000001
-You: How much have I spent?
 ```
 
 ## Project Structure
 
 ```
 .
-├── shopping_cart_agent_db.py   # Main database-powered agent
-├── init_database.py            # Database initialization script
-├── test_agent_db.py            # Comprehensive test suite
-├── generate_database_dump.py   # Generate MySQL dump file
+├── web_app.py                  # Flask web application
+├── templates/
+│   └── index.html              # Web interface HTML
+├── static/
+│   ├── style.css               # Web interface styles
+│   └── app.js                  # Frontend JavaScript
+├── shopping_cart_agent_db.py   # CLI database agent
+├── init_database.py            # Database initialization
+├── test_agent_db.py            # CLI test suite
+├── test_web_app.py             # Web API test suite
+├── generate_database_dump.py   # MySQL dump generator
 ├── shopping_cart.db            # SQLite database (40MB)
-├── database_dump.sql           # MySQL-compatible dump (varies)
+├── database_dump.sql           # MySQL dump
+├── requirements.txt            # Python dependencies
+├── start_web_app.sh            # Web server startup script
 ├── README.md                   # This file
-└── README_DATABASE.md          # Detailed documentation
+└── README_DATABASE.md          # Technical documentation
 ```
 
 ## Database Schema
@@ -86,7 +107,27 @@ You: How much have I spent?
 
 ## Usage Examples
 
-### Interactive Mode
+### Web Application
+
+The web interface provides a complete customer service experience with:
+- **Chat Interface**: Ask questions in natural language
+- **Product Catalog**: Browse and search 278+ products
+- **Order Management**: View and track all your orders
+- **Account Dashboard**: View personal information and statistics
+
+**Features:**
+- Responsive design works on desktop and mobile
+- Real-time chat with the AI agent
+- Filter products by category
+- Filter orders by status (pending, processing, shipped, delivered)
+- Session-based authentication
+
+**Sample Customer IDs for Testing:**
+- `U000001` - Ralph Roberts (119 orders, $60,161 spent)
+- `U000010` - Christina Stone (103 orders, $39,475 spent)
+- `U000100` - Various customers with different order histories
+
+### Command Line Interface
 
 ```bash
 python3 shopping_cart_agent_db.py
@@ -237,12 +278,27 @@ Tests include:
 
 ## Files
 
-- **shopping_cart_agent_db.py** - Main agent with database support
-- **init_database.py** - Initialize SQLite database with generated data (no JSON dependencies)
-- **test_agent_db.py** - Comprehensive test suite
-- **generate_database_dump.py** - Generate MySQL-compatible SQL dump with 300+ products
+**Web Application:**
+- **web_app.py** - Flask web server with REST API
+- **templates/index.html** - Single-page web interface
+- **static/style.css** - Modern, responsive CSS styling
+- **static/app.js** - Frontend JavaScript for interactivity
+- **requirements.txt** - Python package dependencies
+- **start_web_app.sh** - Convenient startup script
+
+**Command Line:**
+- **shopping_cart_agent_db.py** - CLI agent with database support
+- **test_agent_db.py** - CLI test suite
+- **test_web_app.py** - Web API test suite
+
+**Database:**
+- **init_database.py** - Generate SQLite database (no JSON dependencies)
+- **generate_database_dump.py** - Generate MySQL-compatible SQL dump
 - **shopping_cart.db** - SQLite database (created by init_database.py)
-- **database_dump.sql** - MySQL-compatible SQL dump (created by generate_database_dump.py)
+- **database_dump.sql** - MySQL dump (created by generate_database_dump.py)
+
+**Documentation:**
+- **README.md** - This file
 - **README_DATABASE.md** - Detailed technical documentation
 
 ## Performance
@@ -253,13 +309,35 @@ Tests include:
 - Indexed fields: user_id, order_date, status, email
 - Supports 100k+ orders and 300+ products without performance degradation
 
+## REST API Endpoints
+
+The web application provides the following REST API endpoints:
+
+**Authentication:**
+- `POST /api/login` - Login with customer ID
+- `POST /api/logout` - Logout current customer
+- `GET /api/customer` - Get current customer information
+
+**Queries:**
+- `POST /api/ask` - Ask a natural language question
+
+**Products:**
+- `GET /api/products` - Get all products (supports ?category= and ?search=)
+- `GET /api/categories` - Get all product categories
+
+**Orders (requires login):**
+- `GET /api/orders` - Get customer orders (supports ?status=)
+- `GET /api/order/<order_id>` - Get specific order details
+- `GET /api/order-summary` - Get customer order statistics
+
 ## Documentation
 
 For detailed technical documentation, see [README_DATABASE.md](README_DATABASE.md)
 
 ## Future Enhancements
 
-- Session management with tokens
+- ✅ ~~Session management~~ (Implemented)
+- ✅ ~~REST API interface~~ (Implemented)
 - Order placement functionality
 - Shopping cart management
 - Payment processing integration
@@ -267,4 +345,4 @@ For detailed technical documentation, see [README_DATABASE.md](README_DATABASE.m
 - Advanced analytics and reporting
 - Recommendation engine
 - Multi-language support
-- REST API interface
+- User registration and password authentication
